@@ -1,110 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="La Belle Lingerie — conforto, beleza e delicadeza em cada detalhe.">
-  <title>La Belle Lingerie | Conforto & Beleza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Belle Lingerie</title><meta name="description" content="La Belle Lingerie — conforto e beleza."><link rel="stylesheet" href="style.css"></head>
 <body>
-  <div class="announcement">LA BELLE LINGERIE · CONFORTO E BELEZA EM CADA DETALHE</div>
-  <header class="site-header">
-    <a class="brand" href="#" aria-label="La Belle Lingerie - início">
-      <span class="brand-name">La Belle</span>
-      <span class="brand-subtitle">LINGERIE</span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
-    <nav id="mainNav">
-      <a href="#inicio">Início</a>
-      <a href="#colecao">Coleção</a>
-      <a href="#sobre">Nossa essência</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <button class="cart-button" id="openCart" aria-label="Abrir carrinho">Sacola <span id="cartCount">0</span></button>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow">SUA NOVA LOJA FAVORITA</p>
-        <h1>Conforto que encanta.<br><em>Beleza que inspira.</em></h1>
-        <p>Peças escolhidas com carinho para acompanhar você em todos os momentos.</p>
-        <a class="button button-light" href="#colecao">Descubra a coleção</a>
-      </div>
-      <div class="hero-art" role="img" aria-label="Composição elegante em tons bordô e off-white">
-        <div class="hero-circle"></div>
-        <div class="hero-ribbon">LA BELLE <span>✦</span> LINGERIE</div>
-        <div class="hero-note">Delicadeza<br>em cada detalhe</div>
-      </div>
-    </section>
-
-    <section class="benefits" aria-label="Benefícios">
-      <div><span>✧</span><p>Conforto em primeiro lugar</p></div>
-      <div><span>♡</span><p>Escolhas feitas com carinho</p></div>
-      <div><span>✦</span><p>Atendimento especial</p></div>
-    </section>
-
-    <section class="collection section" id="colecao">
-      <div class="section-heading">
-        <p class="eyebrow">ESCOLHA SEUS FAVORITOS</p>
-        <h2>Um toque de <em>La Belle</em></h2>
-        <p>Conheça algumas das nossas peças em destaque.</p>
-      </div>
-      <div class="filters">
-        <label class="search-box">
-          <span>⌕</span>
-          <input id="searchInput" type="search" placeholder="Buscar produto..." aria-label="Buscar produto">
-        </label>
-        <select id="categoryFilter" aria-label="Filtrar por categoria">
-          <option value="todos">Todas as categorias</option>
-          <option value="Conjuntos">Conjuntos</option>
-          <option value="Pijamas">Pijamas</option>
-          <option value="Bodies">Bodies</option>
-          <option value="Camisolas">Camisolas</option>
-        </select>
-      </div>
-      <div class="product-grid" id="productGrid"></div>
-    </section>
-
-    <section class="story section" id="sobre">
-      <div class="story-mark">LB</div>
-      <div>
-        <p class="eyebrow">A ESSÊNCIA LA BELLE</p>
-        <h2>Mais que lingerie,<br><em>uma forma de se sentir bem.</em></h2>
-        <p>Acreditamos que conforto e beleza caminham juntos. Por isso, cada escolha da La Belle é pensada para valorizar seus momentos com delicadeza, qualidade e carinho.</p>
-      </div>
-    </section>
-
-    <section class="contact section" id="contato">
-      <p class="eyebrow">VAMOS CONVERSAR?</p>
-      <h2>Estamos aqui para <em>você.</em></h2>
-      <p>Fale com a nossa equipe pelo WhatsApp e tire suas dúvidas.</p>
-      <a class="button button-dark" id="whatsappContact" href="#" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
-      <small>Instagram: @laBelleLingerie</small>
-    </section>
-  </main>
-
-  <footer>
-    <a class="brand brand-footer" href="#"><span class="brand-name">La Belle</span><span class="brand-subtitle">LINGERIE</span></a>
-    <p>Conforto e beleza em cada detalhe.</p>
-    <span>© <span id="year"></span> La Belle Lingerie. Todos os direitos reservados.</span>
-  </footer>
-
-  <div class="cart-overlay" id="cartOverlay"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
-    <div class="cart-head"><h2>Sua sacola</h2><button id="closeCart" aria-label="Fechar carrinho">×</button></div>
-    <div id="cartItems" class="cart-items"><p class="empty-cart">Sua sacola está vazia.</p></div>
-    <div class="cart-bottom">
-      <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
-      <button class="button button-dark checkout-button" id="checkoutButton">Finalizar pelo WhatsApp</button>
-      <small>O pedido será enviado para confirmação pelo WhatsApp.</small>
-    </div>
-  </aside>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<header><a class="logo" href="#">La Belle <small>LINGERIE</small></a><p>Conforto e beleza em cada detalhe</p><nav><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#contato">Contato</a></nav></header>
+<section class="hero" id="inicio"><span>LA BELLE LINGERIE</span><h1>Você merece se sentir especial.</h1><p>Peças escolhidas com carinho para trazer conforto, beleza e delicadeza ao seu dia.</p><a class="btn" href="#produtos">Ver coleção</a></section>
+<main id="produtos"><span>CONHEÇA NOSSA COLEÇÃO</span><h2>Nossos produtos</h2><div class="grid">
+<article><img src="images/pijama-jardim-azul.jpeg" alt="Pijama Jardim Azul"><h3>Pijama Jardim Azul</h3><b>R$ 79,90</b></article>
+<article><img src="images/pijama-frutinhas.jpeg" alt="Pijama Frutinhas"><h3>Pijama Frutinhas</h3><b>R$ 79,90</b></article>
+<article><img src="images/lingerie-premium-vermelha.jpeg" alt="Lingerie Premium Vermelha"><h3>Lingerie Premium Vermelha</h3><b>R$ 89,90</b></article>
+<article><img src="images/lingerie-classica-azul.jpeg" alt="Lingerie Clássica Azul"><h3>Lingerie Clássica Azul</h3><b>R$ 54,90</b></article>
+<article><img src="images/lingerie-classica-preta.jpeg" alt="Lingerie Clássica Preta"><h3>Lingerie Clássica Preta</h3><b>R$ 54,90</b></article>
+<article><img src="images/lingerie-classica-bordo.jpeg" alt="Lingerie Clássica Bordô"><h3>Lingerie Clássica Bordô</h3><b>R$ 54,90</b></article>
+</div></main>
+<section class="contato" id="contato"><h2>Gostou de alguma peça?</h2><p>Entre em contato para consultar tamanhos, cores e disponibilidade.</p><a class="btn" id="whats" href="https://wa.me/" target="_blank">Fale pelo WhatsApp</a></section>
+<footer>© <span id="ano"></span> La Belle Lingerie</footer><script src="script.js"></script></body></html>
